@@ -23,7 +23,10 @@ project:
 # Configuration settings for new git repository.
 git:
   default_branch: master
-  remotes: {  }
+  remotes:
+    cloud: 's5e27ac2b257f3@svn-4837.devcloud.hosting.acquia.com:s5e27ac2b257f3.git'
+  commit-msg:
+    pattern: "/(^${project.prefix}-[0-9]+(: )[^ ].{15,}\\.)|(Merge branch (.)+)/"
 deploy:
   # When manually deploying a tag, also tag the source repository.
   tag_source: true
@@ -74,3 +77,5 @@ modules:
     uninstall:
       - devel
       - views_ui
+cloud:
+  appId: 33577dc1-b6d8-42a8-9127-f0cc4fa51424
