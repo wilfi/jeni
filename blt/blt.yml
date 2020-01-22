@@ -34,7 +34,7 @@ drush:
   # You can set custom project aliases in drush/sites/*.site.yml.
   aliases:
     # The remote environment from which the database will be pulled.
-    remote: '${project.machine_name}.test'
+    remote: '${project.machine_name}.dev'
     # The local environment against which all local drush commands are run.
     local: self
     # The drush alias against which all ci commands are run.
