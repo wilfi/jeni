@@ -1,0 +1,30 @@
+<div class="category">
+  <h1>{{ 'Same category with same author' | t }}</h1>
+  <ul>
+    {% for node in same_author %}
+      <li><a href="{{ node.url }}"> {{ node.label }} </a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>{{ 'Different category with same author' | t }}</h1>
+  <ul>
+    {% for node in diff_category %}
+      <li><a href="{{ node.url }}"> {{ node.label }} </a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>{{ 'Different author with same category' | t }}</h1>
+  <ul>
+    {% for node in diff_author %}
+      <li><a href="{{ node.url }}"> {{ node.label }} </a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>{{ 'Different author with diff category'| t }}</h1>
+  <ul>
+    {% for node in diff_author_diff_cat %}
+      <li><a href="{{ node.url }}"> {{ node.label }} </a></li>
+    {% endfor %}
+  </ul>
+
+</div>
