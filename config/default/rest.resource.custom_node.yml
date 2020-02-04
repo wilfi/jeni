@@ -1,0 +1,21 @@
+uuid: 47323331-e6e9-4449-b2b3-6fa89c79b707
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - sitesettings_api
+    - user
+_core:
+  default_config_hash: s5iKHfJKrKwz2diwl3ZXTvS3vFJOkQ8rW1g0LmdvhgY
+id: custom_node
+plugin_id: custom_node
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+    - xml
+  authentication:
+    - cookie
