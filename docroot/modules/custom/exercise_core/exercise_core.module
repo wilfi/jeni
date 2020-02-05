@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Contains exercise_core.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function exercise_core_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the socalgas_regulatory module.
+    case 'help.page.exercise_core':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Assignment Pages.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function exercise_core_theme($existing, $type, $theme, $path) {
+  return [
+    'related_contents' => [
+      'path' => $path . '/templates',
+      'template' => 'related-contents',
+      'variables' => [
+        'same_author' => [],
+        'diff_category' => [],
+        'diff_author' => [],
+        'diff_author_diff_cat' => [],
+      ],
+    ],
+  ];
+}

@@ -1,23 +1,31 @@
-uuid: 6627d72c-679e-4cce-9e6a-75c32fa4b4b7
+uuid: 3d2b5a96-502b-4129-8162-4deeb6e9d118
 langcode: en
 status: true
 dependencies:
+  config:
+    - views.view.search
   module:
-    - search
+    - system
+    - views
   theme:
     - bartik
 _core:
-  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
+  default_config_hash: UDHpza-uTXT90uUqIrgPDBW4XrHBA1XpzSBQyyRB2Yg
 id: bartik_search
 theme: bartik
-region: sidebar_first
-weight: -1
+region: content
+weight: 0
 provider: null
-plugin: search_form_block
+plugin: 'views_exposed_filter_block:search-page'
 settings:
-  id: search_form_block
-  label: Search
-  provider: search
+  id: 'views_exposed_filter_block:search-page'
+  label: ''
+  provider: views
   label_display: visible
-  page_id: node_search
-visibility: {  }
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }
