@@ -18,7 +18,6 @@ class SiteSettingsFormExtended extends SiteInformationForm {
    * @var \Drupal\Core\Messenger\MessengerInterface
    */
   protected $messenger;
-
   /**
    * Constructs SiteSettingsFormExtended .
    *
