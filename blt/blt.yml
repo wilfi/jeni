@@ -15,7 +15,7 @@ project:
   prefix: JNI
   human_name: 'BLTed 10'
   profile:
-    name: lightning
+    name: standard
   # This will be used as the local uri for all developers.
   local:
     protocol: http

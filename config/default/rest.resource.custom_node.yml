@@ -1,4 +1,4 @@
-uuid: 47323331-e6e9-4449-b2b3-6fa89c79b707
+uuid: 1c3997c0-0d2d-488a-bbec-bb159e818e97
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
     - sitesettings_api
     - user
 _core:
-  default_config_hash: s5iKHfJKrKwz2diwl3ZXTvS3vFJOkQ8rW1g0LmdvhgY
+  default_config_hash: Go4M1xzfPE7dgYVGjpAu9URveWSZYZ-7Os_Jpfq6D00
 id: custom_node
 plugin_id: custom_node
 granularity: resource
@@ -16,6 +16,5 @@ configuration:
     - GET
   formats:
     - json
-    - xml
   authentication:
     - cookie

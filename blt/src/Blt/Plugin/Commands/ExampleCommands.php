@@ -29,5 +29,4 @@ class ExampleCommands extends BltTasks {
     $command = $event->getCommand();
     $this->say("preCommandMessage hook: The {$command->getName()} command is about to run!");
   }
-
 }
