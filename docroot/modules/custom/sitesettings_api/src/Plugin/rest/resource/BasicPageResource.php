@@ -2,6 +2,7 @@
 
 namespace Drupal\sitesettings_api\Plugin\rest\resource;
 
+use Drupal\Core\Cache\CacheableMetadata;
 use Drupal\node\NodeInterface;
 use Drupal\rest\Plugin\ResourceBase;
 use Drupal\rest\ResourceResponse;
@@ -119,9 +120,11 @@ class BasicPageResource extends ResourceBase {
         // Sets node object for response.
         $response_result[$node->id()] = $node;
         $response = new ResourceResponse($response_result);
+        $disable_cache = new CacheableMetadata();
+        $disable_cache->setCacheMaxAge(0);
         // Configure caching for results.
         if ($response instanceof CacheableResponseInterface) {
-          $response->addCacheableDependency($response_result);
+          $response->addCacheableDependency($disable_cache);
         }
         return $response;
       }
