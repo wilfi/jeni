@@ -112,7 +112,7 @@ class RelatedContents extends BlockBase implements ContainerFactoryPluginInterfa
       $query->condition('status', 1);
       $query->condition('type', 'article');
       $query->condition('nid', $current_nid, '<>');
-      $query->range(0,5)->sort('created', 'DESC')->sort('title', 'ASC')
+      $query->range(0, 5)->sort('created', 'DESC')->sort('title', 'ASC')
         ->addTag('category');
       $entity_cat = $query->execute();
 

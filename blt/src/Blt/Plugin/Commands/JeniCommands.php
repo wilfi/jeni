@@ -42,9 +42,10 @@ class JeniCommands extends BltTasks {
    * Override user data sanitization.
    */
   public function dbScrubOverride($site, $target_env, $db_name, $source_env) {
-      $this->say("User data not sanitized for environment  $target_env");
-      $this->taskDrush()
-        ->drush("cr")
-        ->run();
+    $this->say("User data not sanitized for environment  $target_env");
+    $this->taskDrush()
+      ->drush("cr")
+      ->run();
   }
+
 }
