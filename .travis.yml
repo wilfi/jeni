@@ -21,6 +21,7 @@ cache:
 
 services:
 - mysql
+- xvfb
 
 addons:
   ssh_known_hosts:

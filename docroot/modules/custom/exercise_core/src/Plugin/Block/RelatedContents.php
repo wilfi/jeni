@@ -33,7 +33,7 @@ class RelatedContents extends BlockBase implements ContainerFactoryPluginInterfa
    *
    * @var \Drupal\Core\Session\AccountInterface
    */
-  protected $current_user;
+  protected $currenUser;
 
   /**
    * The config factory object.
@@ -82,15 +82,15 @@ class RelatedContents extends BlockBase implements ContainerFactoryPluginInterfa
    *   The plugin implementation definition.
    * @param \Drupal\Core\Routing\CurrentRouteMatch $route_match
    *   The config factory.
-   * @param \Drupal\Core\Session\AccountInterface $current_user
+   * @param \Drupal\Core\Session\AccountInterface $currentUser
    *   The config factory.
    * @param \Drupal\Core\Entity\EntityTypeManager $entityTypeManager
    *   The config factory.
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, CurrentRouteMatch $route_match, AccountInterface $current_user, EntityTypeManager $entityTypeManager) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, CurrentRouteMatch $route_match, AccountInterface $currentUser, EntityTypeManager $entityTypeManager) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->routematch = $route_match;
-    $this->current_user = $current_user;
+    $this->current_user = $currentUser;
     $this->entityTypeManager = $entityTypeManager;
   }
 
