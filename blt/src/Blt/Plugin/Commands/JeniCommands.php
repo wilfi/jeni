@@ -37,9 +37,9 @@ class JeniCommands extends BltTasks {
   }
 
   /**
-   * @hook replace-command artifact:ac-hooks:db-scrub
-   *
    * Override user data sanitization.
+   *
+   * @hook replace-command artifact:ac-hooks:db-scrub
    */
   public function dbScrubOverride($site, $target_env, $db_name, $source_env) {
     $this->say("User data not sanitized for environment  $target_env");
