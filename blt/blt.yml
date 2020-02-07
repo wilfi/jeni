@@ -24,7 +24,7 @@ project:
 git:
   default_branch: master
   remotes:
-    cloud: 's5e27ac2b257f3@svn-4837.devcloud.hosting.acquia.com:s5e27ac2b257f3.git'
+    cloud: 's5e3ca3973ec0b@svn-4837.devcloud.hosting.acquia.com:s5e3ca3973ec0b.git'
   commit-msg:
     pattern: "/(^${project.prefix}-[0-9]+(: )[^ ].{15,}\\.)|(Merge branch (.)+)/"
 deploy:
@@ -78,4 +78,4 @@ modules:
       - devel
       - views_ui
 cloud:
-  appId: 33577dc1-b6d8-42a8-9127-f0cc4fa51424
+  appId: c3acffb4-5d44-4f55-bc81-03918f70b2f0
