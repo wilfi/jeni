@@ -13,7 +13,7 @@ project:
   machine_name: jeni
   # Used for enforcing correct git commit msg syntax.
   prefix: JNI
-  human_name: 'My custom project'
+  human_name: 'My custom project 1'
   profile:
     name: standard
   # This will be used as the local uri for all developers.
