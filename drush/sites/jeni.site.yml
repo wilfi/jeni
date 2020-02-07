@@ -1,18 +1,18 @@
 dev:
-  uri: s5e27ac2b257f3pvoulsmxbb.devcloud.acquia-sites.com
-  host: s5e27ac2b257f3pvoulsmxbb.ssh.devcloud.acquia-sites.com
+  uri: s5e3ca3973ec0bsbjmyzsblb.devcloud.acquia-sites.com
+  host: s5e3ca3973ec0bsbjmyzsblb.ssh.devcloud.acquia-sites.com
   options: {  }
   paths: { dump-dir: /mnt/tmp }
-  root: /var/www/html/s5e27ac2b257f3.dev/docroot
-  user: s5e27ac2b257f3.dev
+  root: /var/www/html/s5e3ca3973ec0b.dev/docroot
+  user: s5e3ca3973ec0b.dev
   ssh: { options: '-p 22' }
 test:
-  uri: s5e27ac2b257f3yztyssw7dt.devcloud.acquia-sites.com
-  host: s5e27ac2b257f3yztyssw7dt.ssh.devcloud.acquia-sites.com
+  uri: s5e3ca3973ec0bt7i3a4ylod.devcloud.acquia-sites.com
+  host: s5e3ca3973ec0bt7i3a4ylod.ssh.devcloud.acquia-sites.com
   options: {  }
   paths: { dump-dir: /mnt/tmp }
-  root: /var/www/html/s5e27ac2b257f3.dev/docroot
-  user: s5e27ac2b257f3.test
+  root: /var/www/html/s5e3ca3973ec0b.test/docroot
+  user: s5e3ca3973ec0b.test
   ssh: { options: '-p 22' }
 local:
   root: /var/www/jeni/docroot
